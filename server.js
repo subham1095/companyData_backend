@@ -26,7 +26,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use(function returnOps(req, res, next) {
-  if (req.method === "OPTIONS") return res.status(200).send("OK").end();
+  if (req.method === "OPTIONS") return res.status(200).send("OK my subham").end();
   next();
 });
 
